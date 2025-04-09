@@ -1,7 +1,6 @@
 body{
-    background-color: black;
+    background-color: rgb(4, 4, 4);
     font-family: 'Poppins';
-    
 }
 
 section{
@@ -75,25 +74,25 @@ li a:hover{
 }
 
 .hero-title{
-    color: white;
+    color: #f4f4f4;
     font-size: 86px;
     max-width: 300px;
     line-height: 1;
 }
 
 .hero-left p{
-    color: white;
+    color: #f4f4f4;
     font-size: 36px;
     max-width: 800px;
     font-weight: 300;
 }
   
 .hero-left button{
-    color: white;
+    color: #f4f4f4;
     border-style: none;
     border-radius: 10px;
     font-size: 30px;
-    padding: 15px 30px;
+    padding: 15px 35px;
     background-image: linear-gradient(to right bottom, #7E1891, #B771E5 );
 }
 
@@ -109,6 +108,12 @@ li a:hover{
     justify-content: space-evenly;
 }
 
+.skills-ribbon p{
+    color: white;
+    font-family: 'Clash Display';
+    font-size: 31px;
+}
+
 .skills-ribbon{
     display: flex;
     justify-content: space-evenly;
@@ -122,16 +127,23 @@ li a:hover{
 @keyframes scroll {
     to{
         transform: translateX(-100%);
-    }
-    
+    } 
 }
 
-
-.skills-ribbon p{
-    color: white;
-    font-family: 'Clash Display';
-    font-size: 31px;
+.about-header{
+    color: #f4f4f4;
+    font-size: 58px;
+    padding-left: 150px;
+    margin-top: 100px;
 }
+
+.about-header::after{
+    content: "";
+    display: block;
+    width: 32px;
+    border-bottom: 2px solid #7E1891;
+}
+
 
 @media screen and (max-width: 1219px) {
     .scroller{
