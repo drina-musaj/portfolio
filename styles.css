@@ -16,7 +16,7 @@ section{
 .blob1{
     height: 70vw;
     width: 70vw;
-    background-image: radial-gradient(closest-side, rgba(255, 93, 32, 0.30), #0000);
+    background-image: radial-gradient(closest-side, #ff5d204d, #0000);
     position: absolute;
     top: -150px;
 }
@@ -53,6 +53,12 @@ li a{
     color: #f2f2f2;
     font-size: 25px;
 }
+
+li a:hover{
+    color: #B771E5;    
+    font-weight: 500;
+}
+
 .resume-btn{
     display: flex;
     gap: 10px;
@@ -88,8 +94,51 @@ li a{
     border-radius: 10px;
     font-size: 30px;
     padding: 15px 30px;
-    background-image: linear-gradient(to right bottom, rgba(85, 102, 255, 0.6), rgba(68, 86, 252, 0.8) );
+    background-image: linear-gradient(to right bottom, #7E1891, #B771E5 );
 }
+
+.scroller{
+    margin-top: 150px;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    height: 88px;
+    width: 100vw;
+    background-color: #0000;
+    box-shadow: 0px 5px 20px 10px rgba(227, 227, 227, 0.15);
+    justify-content: space-evenly;
+}
+
+.skills-ribbon{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-shrink: 0;
+    min-width: 100%;
+
+    animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+    to{
+        transform: translateX(-100%);
+    }
+    
+}
+
+
+.skills-ribbon p{
+    color: white;
+    font-family: 'Clash Display';
+    font-size: 31px;
+}
+
+@media screen and (max-width: 1219px) {
+    .scroller{
+        margin-top: 100px;
+    }
+}
+
 
 
 
