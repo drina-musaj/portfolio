@@ -144,6 +144,19 @@ li a:hover{
     border-bottom: 2px solid #7E1891;
 }
 
+.about{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.about p{
+    color: white;
+    font-size: 40px;
+    font-family: 'Clash Display';
+    max-width: 850px;
+}
+
 
 @media screen and (max-width: 1219px) {
     .scroller{
