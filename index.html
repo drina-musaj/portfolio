@@ -8,6 +8,7 @@
 
 <body>
 
+
   <div class="blob-container">
     <div class="blob1"></div>
     <div class="blob2"></div>
@@ -72,7 +73,7 @@
         </div>
       </div>
 
-      <section>
+      <section id="about">
         <h1 class="about-header">About Me</h1>
         <div class="about">
           <img src="images/hero-image.png" alt="logo" style="object-fit: contain;">
@@ -98,7 +99,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="projects">
 
         <div class="blob-container">
           <div class="blob1"></div>
@@ -109,23 +110,34 @@
         <h1 class="projects-header">Projects</h1>
 
         <div class="projects">
-          <div class="project-item">
-            <img src="images/test-image1.svg" alt="image">
+          <div class="projectItem">
+            <img src="images/test-image1.svg" alt="image" id="openModal">
           </div>
-          <div class="project-item">
+          <div class="projectItem">
             <img src="images/test-image2.svg" alt="image">
           </div>
-          <div class="project-item">
+          <div class="projectItem">
             <img src="images/test-image3.svg" alt="image">
           </div>
-          <div class="project-item">
+          <div class="projectItem">
             <img src="images/test-image4.svg" alt="image">
           </div>
         </div>
 
       </section>
 
-      <section>
+      <div class="popup" id="popup">
+        <div class="modal-inner">
+          <img src="images/project-test1.jpg" alt="project image">
+          <img src="images/project-test2.jpg" alt="project image">
+          <img src="images/project-test3.jpg" alt="project image">
+          <img src="images/project-test4.jpg" alt="project image">
+        </div>
+      </div>
+
+      <script src="script.js"></script>
+
+      <section id="contact">
         <div class="footer-header">
           <h1 class="footer-title">Let's Connect</h1>
           <img src="images/Cloud.svg" alt="logo">
