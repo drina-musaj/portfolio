@@ -14,3 +14,8 @@ images.forEach(projectItem => {
     popupbox.style.display = "none";
   });
 
+  popupbox.addEventListener("click", (e) => {
+    if (e.target === popupbox) {
+      popupbox.style.display = "none";
+    }
+  });
