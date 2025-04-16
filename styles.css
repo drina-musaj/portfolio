@@ -221,6 +221,10 @@ li{
 }
 
 @media (max-width: 1240px) {
+
+    .hero{
+        margin: 0 auto;
+    }
     .projects {
         grid-template-columns: auto ;
         align-items: center;
@@ -320,13 +324,11 @@ form{
     flex-direction: column;
     gap: 10px;
     width: fit-content;
-    
 }
 
 .form-container{
     display: flex;
     justify-content: center;
-    
 }
 
 input , textarea{
@@ -337,7 +339,6 @@ input , textarea{
     font-family: 'Poppins';
     background-color: #45454585;
     font-size: 20px;
-
 }
 
 .form-submit-btn{
@@ -347,7 +348,6 @@ input , textarea{
     font-size: 20px;
     padding: 10px 35px;
     background-image: linear-gradient(to right bottom, #7E1891, #B771E5 );
-
 }
 
 
@@ -393,8 +393,6 @@ input , textarea{
         width: 50px;
         height: 40px;
     }
-
-
 
     .hero{
         flex-direction: column-reverse;
