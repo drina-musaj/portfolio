@@ -17,6 +17,7 @@ document.querySelectorAll('.nav-link').forEach(n=> n.addEventListener("click",()
   navMenu.classList.remove("active");
 }))
 
+
 images.forEach(projectItem => {
       projectItem.addEventListener("click", () => {
           popupbox.style.display = "flex";

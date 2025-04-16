@@ -426,7 +426,7 @@ input , textarea{
     .about p {
         margin-top: 50px;
         font-size: 15px;
-        text-align: center;
+        text-align: justify;
     }
     .count-container p{
         font-size: 24px;
