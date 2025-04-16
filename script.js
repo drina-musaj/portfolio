@@ -1,7 +1,21 @@
+const hamburger = document.querySelector('.hamburger')
+const navMenu = document.querySelector('.nav-menu')
+
+
 const images = document.querySelectorAll('.projectItem');
 const popupbox = document.querySelector('.popup');
 const closeBtn = document.querySelector('.close-btn');
 
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+})
+
+document.querySelectorAll('.nav-link').forEach(n=> n.addEventListener("click",()=>{
+  hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
+}))
 
 images.forEach(projectItem => {
       projectItem.addEventListener("click", () => {
@@ -19,3 +33,4 @@ images.forEach(projectItem => {
       popupbox.style.display = "none";
     }
   });
+

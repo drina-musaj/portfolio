@@ -51,13 +51,13 @@ li{
     padding: 0 10px;
 }
 
-li a{
+.nav-link{
     text-decoration: none;
     color: #f2f2f2;
     font-size: 25px;
 }
 
-li a:hover{
+.nav-link:hover{
     color: #B771E5;    
     font-weight: 500;
 }
@@ -69,6 +69,19 @@ li a:hover{
     text-decoration: none;
     color: #f2f2f2;
     font-size: 25px;
+}
+
+.hamburger{
+    display: none;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+    background-color: #e1e1e1;
 }
 
 .hero{
@@ -90,6 +103,8 @@ li a:hover{
     max-width: 800px;
     font-weight: 300;
 }
+
+
   
 .hero-left button{
     color: #f4f4f4;
@@ -157,7 +172,6 @@ li a:hover{
 .about p{
     color: white;
     font-size: 40px;
-    font-family: 'Clash Display';
     max-width: 850px;
 }
 
@@ -288,11 +302,17 @@ li a:hover{
     align-items: center;
 }
 
+.socials{
+    display: flex;
+    gap: 10px;
+}
 
-.footer li a{
+
+.footer-nav-link{
     color: #e1e1e1;
     font-weight: 100;
     font-size: 20px;
+    text-decoration: none;
 }
 
 form{
@@ -328,5 +348,105 @@ input , textarea{
     padding: 10px 35px;
     background-image: linear-gradient(to right bottom, #7E1891, #B771E5 );
 
+}
+
+
+@media (min-width: 728px) and (max-width: 992px){
+
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);   
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);   
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        background-color: #0000;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-menu.active{
+        left:0;
+    }
+
+    .nav-link{
+        margin: 16px 0;
+    }
+
+    .resume-btn{
+        font-size: 30px;
+    }
+
+    .resume-btn svg{
+        width: 50px;
+        height: 40px;
+    }
+
+
+
+    .hero{
+        flex-direction: column-reverse;
+    }
+
+    .hero-left{
+        text-align: center;        
+    }
+    .hero-left p{
+        font-size: 30px;
+    }
+
+    .hero-left button{
+        margin-top: 50px;
+        padding: 18px 60px;
+        font-size: 36px;
+    }
+
+    .hero-title{
+        max-width: 100%;
+    }
+
+    .about{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about img{
+        width: 500px;
+    }
+    .about p {
+        margin-top: 50px;
+        font-size: 15px;
+        text-align: center;
+    }
+    .count-container p{
+        font-size: 24px;
+    }
+
+    .footer-nav-link{
+        font-size: 26px;
+    }
+}
+
+@media (min-width: 320px) {
+    .footer-header{
+        justify-content: center;
+    }
+
+    .footer-title{
+        padding-left: 0;
+        max-width: 100%;
+    }
 }
 
