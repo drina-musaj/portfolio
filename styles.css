@@ -351,7 +351,7 @@ input , textarea{
 }
 
 
-@media (min-width: 728px) and (max-width: 992px){
+@media (min-width: 320px) and (max-width: 992px){
 
     .hamburger{
         display: block;
@@ -437,16 +437,14 @@ input , textarea{
     .footer-nav-link{
         font-size: 26px;
     }
-}
 
-@media (min-width: 320px) {
     .footer-header{
         justify-content: center;
+        width: 100%;
     }
 
     .footer-title{
         padding-left: 0;
-        max-width: 100%;
     }
 }
 
