@@ -1,10 +1,13 @@
-const hamburger = document.querySelector('.hamburger')
-const navMenu = document.querySelector('.nav-menu')
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
 
 
 const images = document.querySelectorAll('.projectItem');
 const popupbox = document.querySelector('.popup');
 const closeBtn = document.querySelector('.close-btn');
+
+const sendBtn = document.querySelector('.form-submit-btn');
+
 
 
 hamburger.addEventListener("click", () => {
@@ -35,3 +38,6 @@ images.forEach(projectItem => {
     }
   });
 
+  sendBtn.addEventListener("click", () =>{
+    alert("Form Sent Sucessfully!");
+  })

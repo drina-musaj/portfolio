@@ -77,9 +77,9 @@ li{
 
 .bar{
     display: block;
-    width: 25px;
+    width: 46px;
     height: 3px;
-    margin: 5px 0;
+    margin: 12px 0;
     transition: all 0.3s ease;
     background-color: #e1e1e1;
 }
@@ -361,7 +361,7 @@ input , textarea{
         opacity: 0;
     }
     .hamburger.active .bar:nth-child(1){
-        transform: translateY(8px) rotate(45deg);   
+        transform: translateY(20px) rotate(45deg);   
     }
     .hamburger.active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);   
