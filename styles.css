@@ -218,8 +218,18 @@ li{
     display: grid;
     grid-template-columns: auto auto;
     justify-content: space-around;
-    row-gap: 100px;
+    row-gap: 100px; 
+    cursor: pointer;
+   
 }
+
+.projectItem img{
+    max-width: 600px;
+    max-height: 450px;
+    border-radius: 40px;
+}
+
+
 
 @media (max-width: 1240px) {
 
@@ -267,7 +277,7 @@ li{
 }
 .close-btn {
     position: absolute;
-    top: 70px;
+    top: 60px;
     right: 100px;
     background: transparent;
     border: none;
